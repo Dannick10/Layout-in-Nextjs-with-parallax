@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image"
 
 export default interface Icards {
-    idCard: string 
+    idCard: number 
     title: string 
     cardTitle: string 
     cardSub: string 

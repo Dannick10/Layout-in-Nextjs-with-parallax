@@ -20,6 +20,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa";
 
 import Icards from "@/interface/Icards";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   const [offsetY, SetoffsetY] = useState<number>(0);
@@ -33,29 +34,29 @@ export default function Home() {
 
   const [cardsmap] = useState<Icards[]>([
     {
-      idCard: "01",
+      idCard: 1,
       title: "GET STARTED",
       cardTitle: "What level of  hiker are you?",
       cardSub:
-        "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? ",
+        "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you &#8211 novice, moderate, advanced moderate, expert, or expert backpacker? ",
       img: image01,
       alt: "imagem de um mochileiro",
     },
     {
-      idCard: "02",
-      title: "GET STARTED",
-      cardTitle: "What level of  hiker are you?",
+      idCard: 2,
+      title: "Hiking Essentials",
+      cardTitle: "Picking the right Hiking Gear!",
       cardSub:
-        "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? ",
+        "The nice thing about beginning hiking is that you don´t really need any special gear, you can probably get away with things you already have. Lets start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.",
       img: image02,
       alt: "imagem de um mochileiro",
     },
     {
-      idCard: "03",
-      title: "GET STARTED",
-      cardTitle: "What level of  hiker are you?",
+      idCard: 3,
+      title: "where you go is the key",
+      cardTitle: "Understand Your Map & Timing",
       cardSub:
-        "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? ",
+        "To start, print out the hiking guide and map. If it´s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I´ll read the guide and know that say, in a mile, I make a right turn at the junction.",
       img: image03,
       alt: "imagem de um mochileiro",
     },
@@ -167,6 +168,8 @@ export default function Home() {
           />
         ))}
       </article>
+
+      <Footer/>
     </main>
   );
 }
