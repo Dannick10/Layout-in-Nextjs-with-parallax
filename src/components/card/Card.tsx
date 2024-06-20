@@ -15,7 +15,7 @@ interface Props {
 
 const Card = ({idCard,title, offsetY, cardTitle, cardSub, img, alt}: Props) => {
   return (
-    <div className='z-20 relative flex items-center justify-between mt-24 gap-7 text-white' style={{transform:`translateY(${(-offsetY * .1) + 80}px)`}}>
+    <div className='z-20 relative flex items-center justify-between mt-24 gap-7 text-white' style={{transform:`translateY(${(-offsetY * .2) + 300}px)`}}>
         <div className='w-[30em] flex flex-col gap-5 relative'>
             <div className='absolute text-9xl font-bold -top-10 -left-[.8em] bg-gradient-to-r opacity-30 bg-gray-500 text-transparent bg-clip-text'>{idCard}</div>
             <Title title={title} offsetY={0} vel={0}/>

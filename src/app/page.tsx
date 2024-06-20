@@ -11,6 +11,8 @@ import BG_Hero from "/public/BG_Hero.jpg";
 import BG_content from "/public/BG_content.png";
 import MG from "/public/MG.png";
 import image01 from '/public/article/01.jpg'
+import image02 from '/public/article/02.png'
+import image03 from '/public/article/03.png'
 
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -137,7 +139,18 @@ export default function Home() {
           cardTitle="Picking the right Hiking Gear!"
           cardSub="The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
           Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet."
-          img={image01}
+          img={image02}
+          alt="imagem de um mochileiro"
+        />
+
+
+        <Card
+          idCard='03'
+          title="where you go is the key"
+          offsetY={offsetY}
+          cardTitle="where you go is the key"
+          cardSub="To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction.."
+          img={image03}
           alt="imagem de um mochileiro"
         />
       
