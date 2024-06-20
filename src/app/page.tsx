@@ -10,11 +10,13 @@ import background from "/public/VG.png";
 import BG_Hero from "/public/BG_Hero.jpg";
 import BG_content from "/public/BG_content.png";
 import MG from "/public/MG.png";
+import image01 from '/public/article/01.jpg'
 
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa";
 import Title from "@/components/words/Title";
+import Card from "@/components/card/Card";
 
 export default function Home() {
   const [offsetY, SetoffsetY] = useState<number>(0);
@@ -42,7 +44,7 @@ export default function Home() {
           alt="imagem parallax Header"
           priority
           className="w-full h-full -z-20 top-[52%] left-0 absolute"
-          style={{ transform: `translateY(${offsetY * 0.7}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.6}px)` }}
         />
         <Image
           src={background}
@@ -56,7 +58,7 @@ export default function Home() {
           alt="imagem parallax Header"
           priority
           className="w-full h-full -z-20 top-[80%] left-0 absolute"
-          style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.6}px)` }}
         />
 
         <div
@@ -117,8 +119,28 @@ export default function Home() {
         </div>
       </section>
 
-      <article>
+      <article className="z-20 mt-96 p-20 flex flex-col items-center">
+        <Card
+          idCard='01'
+          title="GET STARTED"
+          offsetY={offsetY}
+          cardTitle="What level of  hiker are you?"
+          cardSub="Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? "
+          img={image01}
+          alt="imagem de um mochileiro"
+        />
 
+        <Card
+          idCard='02'
+          title="Hiking Essentials"
+          offsetY={offsetY}
+          cardTitle="Picking the right Hiking Gear!"
+          cardSub="The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
+          Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet."
+          img={image01}
+          alt="imagem de um mochileiro"
+        />
+      
       </article>
     </main>
   );
