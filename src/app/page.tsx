@@ -14,6 +14,7 @@ import MG from "/public/MG.png";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa";
+import Title from "@/components/words/Title";
 
 export default function Home() {
   const [offsetY, SetoffsetY] = useState<number>(0);
@@ -93,13 +94,13 @@ export default function Home() {
             A Hiking guide Be prepared for the Mountains and beyond! scroll down
           </h1>
 
-          <div
+          <aside
             className="flex items-center gap-2"
             style={{ transform: `translateY(${offsetY * 0.5}px)` }}
           >
             <span>Scroll Down</span>
             <FaArrowDown />
-          </div>
+          </aside>
         </div>
 
         <div
@@ -115,6 +116,10 @@ export default function Home() {
           <div className="w-1 h-30 bg-slate-200 relative border-b-gray-200 after:absolute after:z-10 after:top-0 after:left-0 after:h-10 after:w-1 after:bg-white after:contents-['']"></div>
         </div>
       </section>
+
+      <article>
+
+      </article>
     </main>
   );
 }

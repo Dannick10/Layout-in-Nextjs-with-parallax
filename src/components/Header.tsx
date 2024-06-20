@@ -14,14 +14,14 @@ const Header = ({offsetY}: Props) => {
       <div>
         <p>MNTN</p>
       </div>
-      <div>
+      <nav>
         <ul className="flex gap-4">
         <Link href="/" className="hover:text-yellow-300">Equipament</Link>
         <Link href="/" className="hover:text-yellow-300">About us</Link>
         <Link href="/" className="hover:text-yellow-300">Blog</Link>
         
         </ul>
-      </div>
+      </nav>
 
       <div className="flex gap-2 items-center">
         <FaRegUserCircle className="text-lg" />
