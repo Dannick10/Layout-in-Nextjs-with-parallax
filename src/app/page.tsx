@@ -155,7 +155,7 @@ export default function Home() {
         </div>
       </section>
 
-      <article className="z-20 mt-96 p-20 flex flex-col items-center">
+      <article className="z-20 mt-96 p-40 flex flex-col items-center">
         {cardsmap.map((cards: Icards,i) => (
           <div key={i}>
           <Card

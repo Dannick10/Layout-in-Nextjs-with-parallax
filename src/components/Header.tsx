@@ -14,7 +14,7 @@ const Header = ({offsetY}: Props) => {
       <div>
         <p>MNTN</p>
       </div>
-      <nav>
+      <nav className="hidden md:block">
         <ul className="flex gap-4">
         <Link href="/" className="hover:text-yellow-300">Equipament</Link>
         <Link href="/" className="hover:text-yellow-300">About us</Link>
@@ -23,7 +23,7 @@ const Header = ({offsetY}: Props) => {
         </ul>
       </nav>
 
-      <div className="flex gap-2 items-center">
+      <div className="gap-2 items-center hidden md:flex">
         <FaRegUserCircle className="text-lg" />
         <p>Account</p>
       </div>
