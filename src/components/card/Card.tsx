@@ -30,7 +30,7 @@ const Card = ({
       style={{ transform: `translateY(${-offsetY * 0.2 + 300}px)` }}
     >
      
-      <div className="w-[30em] flex flex-col gap-5 relative">
+      <div className="md:w-[30em] flex flex-col gap-5 relative max-w-[80%]">
 
         <div className="relative">
           <div className="absolute text-7xl font-bold -top-6 -left-[.7em] bg-gradient-to-r opacity-30 bg-gray-500 text-transparent bg-clip-text md:text-8xl">
@@ -41,7 +41,7 @@ const Card = ({
 
 
         <h2 className="text-3xl md:text-4xl">{cardTitle}</h2>
-        <p className="z-10 text-sl w-[80%] m-auto md:m-0">{cardSub}</p>
+        <p className="z-10 text-sl m-auto md:m-0">{cardSub}</p>
 
         <div className="flex gap-2 items-center text-yellow-200 m-auto md:m-0">
           <button>Read more </button>

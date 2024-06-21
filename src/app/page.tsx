@@ -67,6 +67,7 @@ export default function Home() {
   return (
     <main>
       <Header offsetY={offsetY} />
+      
       <section className="flex items-center justify-between p-5 text-white h-screen background">
         <Image
           src={BG_Hero}
