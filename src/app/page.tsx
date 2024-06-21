@@ -156,7 +156,8 @@ export default function Home() {
       </section>
 
       <article className="z-20 mt-96 p-20 flex flex-col items-center">
-        {cardsmap.map((cards: Icards) => (
+        {cardsmap.map((cards: Icards,i) => (
+          <div key={i}>
           <Card
             idCard={cards.idCard}
             title={cards.title}
@@ -165,7 +166,8 @@ export default function Home() {
             cardSub={cards.cardSub}
             img={cards.img}
             alt={cards.alt}
-          />
+            />
+            </div>
         ))}
       </article>
 
